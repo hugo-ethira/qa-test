@@ -1,0 +1,105 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  background: #faf8f5;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 2px solid #c9a86a;
+  padding-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.day {
+  font-weight: 600;
+  color: #8a6d3b;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #c9a86a;
+  background: #c9a86a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button[data-testid='reset'] {
+  background: #fff;
+  color: #8a6d3b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e5ddd0;
+}
+
+th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8a6d3b;
+}
+
+.add-item h2 {
+  font-size: 1.1rem;
+}
+
+.add-item form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.add-item input {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d6ccbb;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.add-item input[type='number'] {
+  width: 100px;
+}
+
+.error {
+  color: #b00020;
+  font-weight: 600;
+}
