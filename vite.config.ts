@@ -16,7 +16,7 @@ export default defineConfig({
   },
   preview: {
     host: true,
-    // Allow Railway's *.up.railway.app preview hostnames.
-    allowedHosts: ['.up.railway.app'],
+    // Allow Railway's *.up.railway.app preview hostnames + internal healthcheck probe.
+    allowedHosts: ['.up.railway.app', 'healthcheck.railway.app'],
   },
 });
