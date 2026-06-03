@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Gilded Rose kata in TypeScript",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite preview --host 0.0.0.0 --port ${PORT:-4173}",
     "precompile": "rimraf app/**/*.js test/**/*.js",
     "compile": "tsc",
     "pretest": "rimraf app/**/*.js test/**/*.js",
@@ -13,7 +17,15 @@
   },
   "license": "MIT",
   "private": true,
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
     "@types/chai": "^4.2.22",
     "@types/jest": "^29.4.0",
     "@types/mocha": "^10.0.1",
